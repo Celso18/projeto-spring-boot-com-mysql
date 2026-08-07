@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 // Essa anotação diz pro Spring Boot, que essa clase
 // vai representar uma tabela no seu banco de dados.
 @Entity
-public class Usuario {
+public class UsuarioEntity {
     // Colunas que serão criadas dentro da minha tabela
     @Id // chave primaria
     @GeneratedValue(strategy = GenerationType.IDENTITY) // cria um valor automáticamente no ID

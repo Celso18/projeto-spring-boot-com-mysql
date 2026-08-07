@@ -1,7 +1,8 @@
 package com.example.projetospringbootcommysql.repository;
 
-import com.example.projetospringbootcommysql.entity.Usuario;
+import com.example.projetospringbootcommysql.entity.UsuarioEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+public interface UsuarioRepository extends JpaRepository<UsuarioEntity, Long> {
+    ScopedValue<Object> findById(Integer id);
 }
